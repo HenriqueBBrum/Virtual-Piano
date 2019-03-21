@@ -5,10 +5,12 @@ Piano::Piano(){
     WhiteTile w_t;
 
     for(auto i = 0; i < num_whiteTiles; i++){
-        w_t.setPosition(sf::Vector2f(LARG/num_whiteTiles*i,1));
-        w_t.setSize(sf::Vector2f(LARG/num_whiteTiles, ALT-2));
+        w_t.setPosition(sf::Vector2f(LARG/(num_whiteTiles)*i,1));
+        w_t.setSize(sf::Vector2f(LARG/(num_whiteTiles), ALT-2));
         whiteTiles.push_back(w_t);
+
     }
+
 
     BlackTile b_t;
     const float x_proportion = 0.7;
@@ -64,8 +66,8 @@ void Piano::initalize_sound(){
 
 void Piano::play_sound(int pos){
 
-        sound.setBuffer(buffer[pos]);
-        sound.play();
+        sound[pos].setBuffer(buffer[pos]);
+        sound[pos].play();
 
 }
 
@@ -157,5 +159,3 @@ void Piano::draw(sf::RenderWindow &win){
     }
 
 }
-
-
