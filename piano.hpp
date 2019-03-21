@@ -15,7 +15,7 @@ class Piano{
 
 
         sf::SoundBuffer buffer[SOUNDS];
-        sf::Sound sound;
+        sf::Sound sound[SOUNDS];
 
         void initalize_sound();
 
