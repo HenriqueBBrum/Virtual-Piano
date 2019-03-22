@@ -43,6 +43,7 @@ class WhiteTile : public Tile{
 
 class BlackTile : public Tile{
     public:
+    
         BlackTile();
 
         BlackTile(sf::RectangleShape rect);
