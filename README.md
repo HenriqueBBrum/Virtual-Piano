@@ -1,4 +1,4 @@
 # Virtual-Piano
 Simple virtual piano with SFML
 
-Some sounds are bad because i had to record them with my cellphone
+You are free to use this code.
